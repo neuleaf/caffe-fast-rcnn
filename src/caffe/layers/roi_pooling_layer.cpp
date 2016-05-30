@@ -128,6 +128,7 @@ template <typename Dtype>
 void ROIPoolingLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
       const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
   // NOT_IMPLEMENTED;
+  
   // CPU IMPLEMENTATION
   if(!propagate_down[0]){ 
   	return; 

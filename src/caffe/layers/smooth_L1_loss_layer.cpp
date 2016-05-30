@@ -97,6 +97,7 @@ template <typename Dtype>
 void SmoothL1LossLayer<Dtype>::Backward_cpu(const vector<Blob<Dtype>*>& top,
     const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
   // NOT_IMPLEMENTED;
+  
   // CPU IMPLEMENTATION
   int count = diff_.count();
   const Dtype* in = diff_.cpu_data();
